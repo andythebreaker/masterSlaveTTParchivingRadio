@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Raphaël · Image Rotation</title>
+    <link rel="stylesheet" href="./demo.css" media="screen">
+    <link rel="stylesheet" href="./demo-print.css" media="print">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"
+        integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        window.onload = function () {
+            var src = document.getElementById("bee").src,
+                angle = 0;
+            document.getElementById("holder").innerHTML = "";
+            var R = Raphael("holder", 640, 480);
+            var outputW = 80,
+                outputH = 60,
+                sourceX = 100,
+                sourceY = 100,
+                scaleX = 2,
+                scaleY = 2;
+            var img = R.image(src, 10,10, outputW, outputH).transform("t" + sourceX + "," + sourceY + "s" + scaleX + "," + scaleY + ",0,0");
+
+        };
+    </script>
+</head>
+
+<body>
+    <div id="holder">
+        <img id="bee" src="bd.jpg" width="320" height="240" alt="Bee">
+    </div>
+    <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
+</body>
+
+</html>
