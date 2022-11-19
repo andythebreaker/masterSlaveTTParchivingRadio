@@ -39,14 +39,26 @@ go find your os version!
 
 ## fetch 頻道 all video
 
+那串數字隨使用者換成頻道id(參:"來源" 章節)
+
 ```bash=
-python3 biliCHall.py | node stdregex.js
+python3 biliCHall.py 32863673 | node stdregex.js
 ```
 
 ## download videos
 
+`cd vid`
+
 ```bash=
 for file in ../todo/*.txt; do echo $file && ../lux "https://www.bilibili.com/video/$(cat "${file}")"; done
+```
+
+## to mp3
+
+`cd vid`
+
+```bash=
+for file in *.mp4; do echo $file && ffmpeg -n -i "${file}" "../aud/${file}.mp3"; done
 ```
 
 # 檔案架構
