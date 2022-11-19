@@ -17,7 +17,17 @@
 
 ### python 需前置安裝 (pip install)
 
+```bash=
+pip3 install you-get
+```
+
 ### node 需前置安裝 (npm install)
+
+```bash=
+npm i puppeteer
+```
+
+> 大概吧
 
 ## main-downloader
 
