@@ -62,3 +62,9 @@ for file in *.mp4; do echo $file && ffmpeg -n -i "${file}" "../aud/${file}.mp3";
 ```
 
 # 檔案架構
+
+- `./`
+ - todo
+ - fin
+ - vid
+ - aud
