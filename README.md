@@ -50,7 +50,7 @@ python3 biliCHall.py 32863673 | node stdregex.js
 `cd vid`
 
 ```bash=
-for file in ../todo/*.txt; do echo $file && ../lux "https://www.bilibili.com/video/$(cat "${file}")"; done
+for file in ../todo/*.txt; do echo $file && ../lux "https://www.bilibili.com/video/$(cat "${file}")" && mv "${file}" ../fin; done
 ```
 
 ## to mp3
