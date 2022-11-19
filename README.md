@@ -45,6 +45,10 @@ python3 biliCHall.py | node stdregex.js
 
 ## download videos
 
+```bash=
+for file in ../todo/*.txt; do echo $file && ../lux "https://www.bilibili.com/video/$(cat "${file}")"; done
+```
+
 # 檔案架構
 
  
