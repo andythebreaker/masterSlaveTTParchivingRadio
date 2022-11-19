@@ -189,4 +189,4 @@ class Manager(object):
 if __name__ == '__main__':
 
     m = Manager(prefix='.')
-    m.run(uid='13837532')
+    m.run(uid=sys.argv[1])

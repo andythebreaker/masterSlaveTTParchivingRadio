@@ -22,13 +22,14 @@ var bb=vidname(allshit);
 if(aa.length===bb.length)
 	{
 function rrrr(idx){
+//console.log(aa[idx],bb[idx])
 fs.writeFile('./todo/'+sanitize(bb[idx])+'.txt',String(aa[idx]),function (error) {
   if (error) {
     console.log('文件寫入失敗')
   } else {
     console.log('寫入成功')
   }
-	if(idx<bb.length){
+	if(idx+1<bb.length){
 	rrrr(idx+1);
 	}
 	else{
