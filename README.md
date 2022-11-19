@@ -24,7 +24,7 @@ pip3 install you-get
 ### node 需前置安裝 (npm install)
 
 ```bash=
-npm i puppeteer
+npm i sanitize-filename
 ```
 
 > 大概吧
@@ -50,5 +50,3 @@ for file in ../todo/*.txt; do echo $file && ../lux "https://www.bilibili.com/vid
 ```
 
 # 檔案架構
-
- 
