@@ -1,11 +1,25 @@
-const mysql = require('mysql2/promise');
-const { exec } = require('child_process');
-const util = require('util');
-const path = require('path');
-const fs = require('fs');
+// const mysql = require('mysql2/promise');
+// const { exec } = require('child_process');
+// const util = require('util');
+// const path = require('path');
+// const fs = require('fs');
+
+// const execPromise = util.promisify(exec);
+// const dirPath = path.join(__dirname);
+import mysql from 'mysql2/promise.js';
+import { exec } from 'child_process';
+import util from 'util';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+
+// Convert import.meta.url to __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const execPromise = util.promisify(exec);
 const dirPath = path.join(__dirname);
+
 
 (async () => {
     const connection = await mysql.createConnection({
