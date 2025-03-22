@@ -2,6 +2,10 @@
 
 2025
 
+![image](https://github.com/user-attachments/assets/8836e320-05b7-440c-afbf-a44d2bcc2b89)
+![image](https://github.com/user-attachments/assets/557ceb6c-c3ef-4c27-8138-92d0b5f9b5d3)
+
+
 1. index.
 2. d.
 3. g.
