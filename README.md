@@ -1,4 +1,4 @@
-# 摘要
+# 摘要(not working, https://github.com/mxpv/podsync is better)
 
 2025
 
